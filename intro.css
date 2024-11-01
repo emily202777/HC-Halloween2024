@@ -1,0 +1,49 @@
+/* Universal reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling */
+  body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #7d6b3f;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  
+  .title-image-container {
+    position: relative; /* Set this container as the positioning context for the button */
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden; /* Ensures button doesn’t extend beyond the image bounds */
+  }
+  
+  .title-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Button container styling */
+  .button-container {
+    position: absolute;
+    top: 53.25%; /* Adjust for your desired vertical position */
+    left: 62.9%; /* Adjust for your desired horizontal position */
+    transform: translate(-50%, -50%); /* Center the button */
+    text-align: center;
+  }
+  
+  /* Transparent Button styling */
+  .btn {
+    background-color: transparent; /* Fully transparent background */
+    color: transparent; /* Fully transparent text */
+    width: 235px; /* Set the desired width */
+    height: 50px; /* Set the desired height */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor to indicate it's clickable */
+  }
+  

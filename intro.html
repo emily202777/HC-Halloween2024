@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Title</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"> <!-- Link to your external CSS file -->
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="title-image-container">
+      <img src="titlePage.png" class="title-image" id="titleImage">
+      <video id="kenBurnsVideo" width="100%" height="auto" style="display: none;">
+        <source src="kenBurns1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="button-container">
+      <button class="btn" onclick="playVideo()">Begin</button>
+    </div>
+  </header>
+
+  <script>
+    function playVideo() {
+      const titleImage = document.getElementById("titleImage");
+      const video = document.getElementById("kenBurnsVideo");
+      
+      titleImage.style.display = "none"; // Hide the image
+      video.style.display = "block"; // Show the video
+      video.play(); // Start playing the video
+    }
+  </script>
+</body>
+
+</html>
